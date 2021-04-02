@@ -18,7 +18,6 @@ public class JavaIfElse {
         }
 
         scanner.close();
-        System.out.println("testing commit");
 
     }
 }
