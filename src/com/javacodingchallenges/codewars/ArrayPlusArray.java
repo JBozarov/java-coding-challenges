@@ -2,6 +2,7 @@ package com.javacodingchallenges.codewars;
 
 
 import java.util.Arrays;
+import java.util.stream.IntStream;
 
 
 public class ArrayPlusArray {
@@ -15,6 +16,12 @@ public class ArrayPlusArray {
     int[] result = new int[arr1.length + arr2.length];
     System.arraycopy(arr1, 0, result, 0, arr1.length);
     System.arraycopy(arr2, 0, result, arr1.length, arr2.length);
-    return Arrays.stream(result).sum();
+
+    // any results are correct:
+    int result1 = Arrays.stream(result).sum();
+    int result2 = Arrays.stream(arr1).sum() + Arrays.stream(arr2).sum();
+    int result3 = IntStream.of(arr1).sum() + IntStream.of(arr2).sum();
+
+    return result3;
   }
 }
