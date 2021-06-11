@@ -1,4 +1,4 @@
-package com.javacodingchallenges.groups.hackerrank.string;
+package com.javacodingchallenges.hackerrank.string;
 
 
 import java.util.Scanner;
