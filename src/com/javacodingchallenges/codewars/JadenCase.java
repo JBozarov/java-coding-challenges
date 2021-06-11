@@ -5,17 +5,16 @@ import java.util.Arrays;
 public class JadenCase {
 
   public static void main(String[] args) {
-    System.out.println(toJadenCase("men Seni Sevaman guncha"));
+    System.out.println(toJadenCase("How can mirrors be real if our eyes aren't real"));
   }
 
-
-    public static String toJadenCase(String phrase) {
-        String result = Arrays.stream(phrase.split(" "))
-                .map(v -> String.valueOf(v.charAt(0)).toUpperCase())
-                .reduce("", (sum, cur) -> sum + " " + cur);
-
-        return result;
+  public static String toJadenCase(String phrase) {
+    System.out.println(phrase);
+    if (phrase == null || phrase.equals("")) {
+      return null;
     }
-
-
+    return Arrays.stream(phrase.split(" "))
+        .map(v -> String.valueOf(v.charAt(0)).toUpperCase() + v.substring(1))
+        .reduce("", (sum, cur) -> sum + " " + cur).trim();
+  }
 }

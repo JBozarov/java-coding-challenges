@@ -1,8 +1,8 @@
-package com.javacodingchallenges.groups.hackerrank.general;
+package com.javacodingchallenges.hackerrank.general;
 
 import java.util.*;
 
-public class Student implements Comparator<Student> {
+class Student implements Comparator<Student> {
     private int id;
     private String fname;
     private double cgpa;
