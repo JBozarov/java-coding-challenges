@@ -9,7 +9,6 @@ public class JadenCase {
   }
 
   public static String toJadenCase(String phrase) {
-    System.out.println(phrase);
     if (phrase == null || phrase.equals("")) {
       return null;
     }
