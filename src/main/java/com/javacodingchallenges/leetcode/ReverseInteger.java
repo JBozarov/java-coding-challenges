@@ -1,4 +1,4 @@
-package com.javacodingchallenges.groups.leetcode;
+package com.javacodingchallenges.leetcode;
 
 public class ReverseInteger {
 

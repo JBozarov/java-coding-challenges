@@ -1,4 +1,4 @@
-package com.javacodingchallenges.groups.leetcode;
+package com.javacodingchallenges.leetcode;
 
 import java.util.LinkedList;
 import java.util.List;
