@@ -1,4 +1,4 @@
-package com.javacodingchallenges.codewars;
+package com.javacodingchallenges.codewars.kata8;
 
 public class SumOfStrings {
 

@@ -1,4 +1,4 @@
-package com.javacodingchallenges.codewars;
+package com.javacodingchallenges.codewars.kata7;
 
 import java.util.Arrays;
 

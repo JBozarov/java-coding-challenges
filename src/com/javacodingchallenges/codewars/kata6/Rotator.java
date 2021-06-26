@@ -1,4 +1,4 @@
-package com.javacodingchallenges.codewars;
+package com.javacodingchallenges.codewars.kata6;
 
 public class Rotator {
   public static void main(String[] args) {
