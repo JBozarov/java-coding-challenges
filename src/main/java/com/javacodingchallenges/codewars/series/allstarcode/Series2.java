@@ -1,6 +1,5 @@
 package main.java.com.javacodingchallenges.codewars.series.allstarcode;
 
-import java.math.BigDecimal;
 import java.util.Arrays;
 import java.util.List;
 
