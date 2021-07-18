@@ -13,7 +13,10 @@ public class Series7 {
     if (age < 25) {
       insuranceCost += days * 10;
     }
-    if (size.equals("medium")) {
+    if (size.equals("economy")) {
+      return Math.max(insuranceCost, 0);
+    }
+    else if (size.equals("medium")) {
       insuranceCost += days * 10;
     } else {
       insuranceCost += days * 15;
