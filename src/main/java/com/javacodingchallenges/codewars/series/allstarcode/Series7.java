@@ -2,25 +2,17 @@ package main.java.com.javacodingchallenges.codewars.series.allstarcode;
 
 public class Series7 {
   public static void main(String[] args) {
-    System.out.println(insurance(18, "medium", 7)); // 490
-    System.out.println(insurance(30,"full-size",30)); // 1950
-    System.out.println(insurance(21,"economy",-10)); // 0
-    System.out.println(insurance(42,"my custom car",7)); // 455
+    System.out.println(compute(5)); // => 1.1511111111111112;
+    System.out.println(compute(9)); // => 1.1838649533887629;
+    System.out.println(compute(-1)); // => 0
+    System.out.println(compute(8)); // => 0
   }
 
-  public static int insurance(int age, String size, int days) {
-    int insuranceCost = days * 50;
-    if (age < 25) {
-      insuranceCost += days * 10;
+  public static double compute(int n) {
+    double result = 0.0;
+    for (int i = 1; i <= n; i += 2) {
+      result += (double) 1 / Math.pow(i, 2);
     }
-    if (size.equals("economy")) {
-      return Math.max(insuranceCost, 0);
-    }
-    else if (size.equals("medium")) {
-      insuranceCost += days * 10;
-    } else {
-      insuranceCost += days * 15;
-    }
-    return Math.max(insuranceCost, 0);
+    return n % 2 == 0 || n < 1 ? 0 : result;
   }
 }
