@@ -1,37 +1,38 @@
 package main.java.com.javacodingchallenges.codewars.series.allstarcode;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
 public class Series10 {
   public static void main(String[] args) {
-//    System.out.println(fibonacci(6));  // 8
-//    System.out.println(fibonacci(5));  // 5
-//    System.out.println(fibonacci(0));  // 0
+    System.out.println(fibonacci(6)); // 8
+    System.out.println(fibonacci(5)); // 5
+    System.out.println(fibonacci(0)); // 0
     System.out.println(fibonacci(18)); // 21
+    System.out.println(fibonacci(1)); // 1
   }
 
   public static int fibonacci(int n) {
-    List<Integer> fibonacciList = List.of(1,2,3);
-    int maxFibonacci = Collections.max(fibonacciList);
-
-    if (maxFibonacci < n) {
-      System.out.println("hell " + fibonacciList);
-      fibonacciList = nextFibonacci(fibonacciList, n);
+    if (n < 1) {
+      return 0;
+    } else if (n == 1) {
+      return 1;
     }
-
-    return 0;
+    List<Integer> fibonacciList = new ArrayList<>();
+    fibonacciList.add(1);
+    fibonacciList.add(2);
+    fibonacciList.add(3);
+    addNextFibonacci(fibonacciList, n);
+    return Collections.max(fibonacciList);
   }
 
-  public static List<Integer> nextFibonacci(List<Integer> fibList, int n) {
-    int n1 = 1;
-    int n2 = 2;
-    int n3 = 3;
-    List<Integer> newFibList = fibList;
-    newFibList.add(n);
-
-    return newFibList;
+  public static void addNextFibonacci(List<Integer> fibonacciList, int n) {
+    int maxFibonacci = Collections.max(fibonacciList);
+    int beforeLast = fibonacciList.get(fibonacciList.size() - 2);
+    if (maxFibonacci < n) {
+      fibonacciList.add(maxFibonacci + beforeLast);
+      addNextFibonacci(fibonacciList, n);
+    }
   }
 }
