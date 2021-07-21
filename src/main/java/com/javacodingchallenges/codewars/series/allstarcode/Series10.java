@@ -6,11 +6,11 @@ import java.util.List;
 
 public class Series10 {
   public static void main(String[] args) {
-    System.out.println(fibonacci(6)); // 8
-    System.out.println(fibonacci(5)); // 5
-    System.out.println(fibonacci(0)); // 0
+    System.out.println(fibonacci(6));  // 8
+    System.out.println(fibonacci(5));  // 5
+    System.out.println(fibonacci(0));  // 0
     System.out.println(fibonacci(18)); // 21
-    System.out.println(fibonacci(1)); // 1
+    System.out.println(fibonacci(1));  // 1
   }
 
   public static int fibonacci(int n) {
