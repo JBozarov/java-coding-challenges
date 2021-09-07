@@ -3,8 +3,8 @@ package com.javacodingchallenges.codewars.kata8;
 public class TwiceAsOld {
 
   public static void main(String[] args) {
-    //System.out.println(TwiceAsOld(30, 7));
-    System.out.println(TwiceAsOld(45,30));
+    System.out.println(TwiceAsOld(30, 7)); // 16
+    System.out.println(TwiceAsOld(45,30)); // 15
   }
 
   public static int TwiceAsOld(int dadYears, int sonYears) {
