@@ -14,6 +14,7 @@ public class MapDemo {
 
     Map.Entry<String, String> entry = stringMap.entrySet().iterator().next();
     System.out.println(entry);
+    System.out.println("testing mac");
     String values = null;
     for (Map.Entry<String, String> single: stringMap.entrySet()) {
       System.out.println("key " + single.getKey());
