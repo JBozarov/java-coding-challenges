@@ -5,9 +5,15 @@ import java.util.TreeMap;
 
 public class RomanToInteger {
     public static void main(String[] args) {
-        //romanToInt("XXVII");
-        //romanToInt("XXIV");
-        romanToInt("MCMXCIV");
+        System.out.println(romanToInt("XXVII"));
+        System.out.println("--------------------------------------------");
+        System.out.println(romanToInt("XXIV"));
+        System.out.println("--------------------------------------------");
+        System.out.println(romanToInt("MCMXCIV"));
+        System.out.println("--------------------------------------------");
+        System.out.println(romanToInt("VIII"));
+        System.out.println("--------------------------------------------");
+        System.out.println(romanToInt("MCMXCVI")); // 1996
     }
 
     public static int romanToInt(String s) {
@@ -20,31 +26,25 @@ public class RomanToInteger {
         romanValues.put('D', 500);
         romanValues.put('M', 1000);
 
-
         int result = 0;
         int count = 1;
-        for (int i = 0; i < s.length()-1; i++ ) {
-            if (count < s.length()) {
-                System.out.println("line 28 count " + count );
-                System.out.println("line 29 i " + i );
+        for (int i = 0; i < s.length(); i++ ) {
+            System.out.println(" count-" + count + " i-" + i + " s.length()-" + s.length());
+            if (count < s.length() && i < s.length() - 1) {
                 if ( romanValues.get(s.charAt(i)) < romanValues.get(s.charAt(i+1)) ) {
                   result += romanValues.get(s.charAt(i+1)) - romanValues.get(s.charAt(i));
                   i++;
-                  System.out.println("line 33 " +  i + " and result is " + result);
                 } else {
-                    System.out.println("line 35 " + count);
                     result += romanValues.get(s.charAt(i));
                 }
             } else {
-                System.out.println(" line 40 " + count);
+                result += romanValues.get(s.charAt(i));
             }
             count ++;
-            System.out.println("result in " + count + " " + result);
-            System.out.println(" ------------------------------------------------ ");
+            System.out.println(" result is " + result);
         }
 
         return result;
-
     }
 
 
