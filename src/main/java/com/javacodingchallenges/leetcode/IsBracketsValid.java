@@ -1,10 +1,15 @@
 package com.javacodingchallenges.leetcode;
 
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Stack;
+
 public class IsBracketsValid {
     public static void main(String[] args) {
         System.out.println(isValid("(([]))"));
         System.out.println(isValid("(]"));
         System.out.println(isValid("()[]{}"));
+        System.out.println(isValid("()"));
     }
 
     private static boolean isValid(String s) {
@@ -20,6 +25,18 @@ public class IsBracketsValid {
                 System.out.println(" hit " + s);
                 return true;
             }
+        }
+
+
+        Stack<String> stack = new Stack<>();
+        Map<String, String> map = new HashMap<>();
+        map.put(")", "(");
+        map.put("]", "[");
+        map.put("}", "{");
+
+        String[] chars = s.split("");
+        for (String c : chars) {
+            
         }
         return false;
     }
