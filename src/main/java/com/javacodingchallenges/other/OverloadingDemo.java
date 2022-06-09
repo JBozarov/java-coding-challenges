@@ -4,7 +4,7 @@ public class OverloadingDemo {
     public static void main(String[] args) {
         int i = 0;
         callMe(i);  // long is i, why ?
-        // Because JVM does a Widening and chooses the maximum range 
+        // Because JVM does a Widening and chooses the maximum range
     }
 
 

@@ -21,7 +21,7 @@ public class ValidParentheses {
         System.out.println(isValid(s5)); // true
         System.out.println(isValid(s6)); // false
         System.out.println(isValid(s7)); // false
-        System.out.println(isValid("")); // true
+        System.out.println(isValid("WHEN ")); // true
         System.out.println(isValid(s8)); // false
         System.out.println(isValid("([}}])")); // false
 

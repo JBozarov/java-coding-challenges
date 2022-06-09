@@ -8,7 +8,7 @@ public class RichestCustomerWealth {
         int[][] acc1 = {{1, 2, 3}, {3, 2, 1}};
         System.out.println(maximumWealth(acc1));
 
-        maximumWealthStream(acc1);
+        System.out.println(maximumWealthStream(acc1));
 
 
     }
@@ -17,9 +17,7 @@ public class RichestCustomerWealth {
         int result = 0;
         for (int i = 0; i < accounts.length; i++ ) {
             int temp = 0;
-            for (int k = 0; k < accounts[i].length; k++ ) {
-                temp += accounts[i][k];
-            }
+            temp = Arrays.stream(accounts[i]).reduce(0, (c, a) -> c + a); 
             if (temp > result) {
                 result = temp;
             }
@@ -28,8 +26,10 @@ public class RichestCustomerWealth {
     }
 
     public static int maximumWealthStream(int[][] accounts) {
-        IntStream stream = Arrays.stream(accounts).flatMapToInt(x -> Arrays.stream(x));
-        stream.forEach(System.out::println);
-        return 1;
+        for (int i = 0; i < accounts.length; i++ ) {
+
+        }
+        return Arrays.stream(accounts).flatMapToInt(x -> Arrays.stream(x)).reduce(0, (c, e) -> c + e);
+
     }
 }

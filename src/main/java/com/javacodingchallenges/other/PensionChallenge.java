@@ -4,6 +4,15 @@ import java.util.Scanner;
 
 public class PensionChallenge {
     public static void main(String[] args) {
+
+        System.out.println("dkjf".getClass().getSimpleName() == "S");
+
+
+        String m = "Hello world!";
+        //String newm = m.substring(6, 12) + m.substring(12, 6);
+
+        System.out.println("Heelo my friends".split(" ")[0]);
+
         Scanner scanner = new Scanner(System.in);
         System.out.println("Start");
         System.out.println("Please enter your name: ");
