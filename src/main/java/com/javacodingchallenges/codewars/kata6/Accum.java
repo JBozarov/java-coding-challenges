@@ -1,8 +1,9 @@
 package com.javacodingchallenges.codewars.kata6;
 
+import java.io.Serializable;
 import java.util.Locale;
 
-public class Accum {
+public class Accum extends Object implements Serializable {
 
 /* This time no story, no theory. The examples below show you how to write function accum:
     Examples:
@@ -37,5 +38,6 @@ public class Accum {
 
 
     }
+
 
 }
