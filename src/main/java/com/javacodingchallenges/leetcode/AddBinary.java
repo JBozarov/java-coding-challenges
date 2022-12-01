@@ -15,7 +15,7 @@ public class AddBinary {
         return Integer.toBinaryString(Integer.parseInt(a, 2) + Integer.parseInt(b, 2));
     }
 
-    // This is for
+    // This is the way of solving using binary adding ( adding directly binary number )
     public static String addBinary(String a, String b) {
         int aLength = a.length() - 1;
         int bLength = b.length() - 1;
