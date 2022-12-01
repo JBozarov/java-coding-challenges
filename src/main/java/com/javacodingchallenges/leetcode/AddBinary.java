@@ -9,6 +9,7 @@ public class AddBinary {
         System.out.println(addBinary(b1, b2));                 // 110111101100010011000101110110100000011101000101011001000011011000001100011110011010010011000000000
         System.out.println(addBinary("1010", "1011"));    // 10101
         System.out.println(addBinary("1011101", "1101")); // 1101010
+        System.out.println(addBinary("0", "0")); // 1101010
     }
 
     public static String addBinary2(String a, String b) {
@@ -21,6 +22,11 @@ public class AddBinary {
         int bLength = b.length() - 1;
         int carry = 0;
         String sum = "";
+
+        if (a.equals("0") && b.equals("0")) {
+            return "0";
+        }
+
 
         while (aLength >= 0 || bLength >= 0) {
             int tempA = 0;
