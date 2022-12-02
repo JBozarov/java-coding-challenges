@@ -1,4 +1,4 @@
-package com.javacodingchallenges.leetcode;
+package com.javacodingchallenges.leetcode.string;
 
 public class AddBinary {
     public static void main(String[] args) {
