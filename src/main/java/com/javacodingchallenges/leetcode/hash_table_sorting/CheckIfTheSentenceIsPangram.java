@@ -1,4 +1,4 @@
-package com.javacodingchallenges.leetcode.hashcodeSorting;
+package com.javacodingchallenges.leetcode.hash_table_sorting;
 
 import java.util.*;
 
