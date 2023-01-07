@@ -1,4 +1,4 @@
-package com.javacodingchallenges.leetcode;
+package com.javacodingchallenges.leetcode.general;
 
 import java.util.ArrayList;
 import java.util.Arrays;
