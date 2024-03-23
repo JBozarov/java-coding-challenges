@@ -1,4 +1,4 @@
-package com.javacodingchallenges.leetcode;
+package com.javacodingchallenges.leetcode.general;
 
 public class Sentences {
     public static void main(String[] args) {

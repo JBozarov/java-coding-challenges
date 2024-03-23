@@ -1,4 +1,4 @@
-package com.javacodingchallenges.leetcode;
+package com.javacodingchallenges.leetcode.general;
 
 import java.util.Map;
 import java.util.TreeMap;

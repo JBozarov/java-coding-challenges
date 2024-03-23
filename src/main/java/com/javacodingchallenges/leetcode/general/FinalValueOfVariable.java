@@ -1,4 +1,4 @@
-package com.javacodingchallenges.leetcode;
+package com.javacodingchallenges.leetcode.general;
 
 public class FinalValueOfVariable {
     public static void main(String[] args) {
