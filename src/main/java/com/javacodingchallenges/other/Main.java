@@ -18,6 +18,23 @@ public class Main {
 
         sets.stream().collect(Collectors.toList());
 
+        String a = " ـبـ ا";
+        System.out.println(a);
+
+        Map<String, String> arabicAlphabet = new HashMap<>();
+
+        arabicAlphabet.put("alifIsolated", "ا");
+        arabicAlphabet.put("alifEnd", "ـا");
+        arabicAlphabet.put("alifMiddle", "ـا");
+        arabicAlphabet.put("alifMiddle", "ا");
+
+        arabicAlphabet.put("baaIsolated", "ب");
+        arabicAlphabet.put("baaEnd", "ج");
+        arabicAlphabet.put("baaEnd", "ي");
+
+
+
+
 
     }
 }

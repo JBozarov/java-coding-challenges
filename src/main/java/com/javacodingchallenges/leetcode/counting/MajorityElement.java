@@ -1,7 +1,6 @@
 package com.javacodingchallenges.leetcode.counting;
 
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
 
 public class MajorityElement {
     public static void main(String[] args) {
@@ -23,6 +22,11 @@ public class MajorityElement {
             } else {
                 map.put(i, 1);
             }
+        }
+
+        Collection<Integer> values = map.values();
+        for (Integer i : values) {
+            System.out.println("values are " + i);
         }
 
         for (Map.Entry<Integer, Integer> entry : map.entrySet()) {
