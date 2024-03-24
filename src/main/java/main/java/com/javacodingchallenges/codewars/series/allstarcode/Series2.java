@@ -14,4 +14,5 @@ public class Series2 {
     double result = (double) total/list.size();
       return Math.ceil(result*10)/10;
   }
+
 }
