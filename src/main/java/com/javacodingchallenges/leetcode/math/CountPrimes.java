@@ -1,0 +1,39 @@
+package com.javacodingchallenges.leetcode.math;
+
+public class CountPrimes {
+    public static void main(String[] args) {
+//        System.out.println(countPrimes(0)); // 0
+//        System.out.println(countPrimes(1)); // 0
+//        System.out.println(countPrimes(2)); // 1
+//        System.out.println(countPrimes(-90)); // 0
+        System.out.println(countPrimes(10)); // 4
+    }
+
+
+    public static int countPrimes (int n) {
+        int count = 1;
+
+        if (n <= 2) {
+            return 0;
+        } else if (n == 3) {
+            return 1;
+        } else {
+            int startNumber = 5;
+            for ( int i = 3; i < n; i += 2 ) {
+                for (int k = 3; k < i; k++) {
+
+                    if (i % k != 0) {
+                        System.out.println("true " + i + " and k " + k);
+                        count++;
+                        break;
+                    }
+                }
+
+            }
+
+
+        }
+
+        return count;
+    }
+}
