@@ -13,10 +13,14 @@ public class MaximumNumberOfWordsYouCanType {
     public static int canBeTypedWords(String text, String brokenLetters) {
         int count = 0;
         for (String word : text.split(" ")) {
+            boolean unbroken = true;
             for (char singleChar : brokenLetters.toCharArray()) {
-                if (!word.contains(String.valueOf(singleChar))) {
-                    count++;
+                if (word.contains(String.valueOf(singleChar))) {
+                    unbroken = false;
                 }
+            }
+            if (unbroken) {
+                count++;
             }
         }
         return count;
