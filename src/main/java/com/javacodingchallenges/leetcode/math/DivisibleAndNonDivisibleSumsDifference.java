@@ -10,10 +10,23 @@ public class DivisibleAndNonDivisibleSumsDifference {
 
 
     public static int differenceOfSums(int n, int m) {
-        int num1 = 0;
-        int num2 = 0;
+        return divisible(n, m) - nonDivisible(n, m);
+    }
 
-        return num1 - num2;
+    public static int divisible (int k, int p) {
+        int sum = 0;
+        for (int i = 1; i <= k; i++) {
+
+        }
+        return sum;
+    }
+
+    public static int nonDivisible (int k, int p) {
+        int sum = 0;
+        for (int i = 1; i <= k; i++) {
+
+        }
+        return sum;
     }
 }
 
