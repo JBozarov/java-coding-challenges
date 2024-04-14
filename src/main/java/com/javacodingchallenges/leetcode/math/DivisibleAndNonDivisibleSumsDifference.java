@@ -16,4 +16,4 @@ public class DivisibleAndNonDivisibleSumsDifference {
         return num1 - num2;
     }
 }
-}
+
