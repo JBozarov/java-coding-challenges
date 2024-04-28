@@ -4,6 +4,8 @@ public class DivisibleAndNonDivisibleSumsDifference {
 
     public static void main(String[] args) {
         System.out.println(differenceOfSums(10, 3));  // 19
+        System.out.println(differenceOfSums(5, 6));   // 15
+        System.out.println(differenceOfSums(5, 1));   // -15
     }
 
 
