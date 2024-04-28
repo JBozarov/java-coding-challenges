@@ -3,9 +3,9 @@ package com.javacodingchallenges.leetcode.hash_table_sorting;
 public class MaximumNumberOfWordsYouCanType {
     public static void main(String[] args) {
 
-        System.out.println(canBeTypedWords("hello world", "ad")); // 1
-        System.out.println(canBeTypedWords("leet code", "lt"));   // 1
-        System.out.println(canBeTypedWords("leet code", "e"));    // 0
+        System.out.println(canBeTypedWords("hello world", "ad"));  // 1
+        System.out.println(canBeTypedWords("leet code", "lt"));    // 1
+        System.out.println(canBeTypedWords("leet code", "e"));     // 0
 
     }
 
